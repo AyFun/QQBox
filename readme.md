@@ -21,7 +21,7 @@
      ```
    - 本地构建：
      ```bash
-     docker build -t qqbox .
+     docker build -t ayfun/qqbox .
      ```
 
 2. **运行容器**
@@ -41,7 +41,7 @@
       -v /mnt/c/Windows/Fonts:/usr/share/fonts/win11 \ # 挂载 Windows 字体
       -v /mnt/d/QQ:/root/.config/QQ \                  # 挂载 QQ 目录到D:\QQ
       -v /mnt/d/QQfiles:/root/QQfiles \                # 挂载 QQ 文件目录到D:\QQfiles
-      qqbox:latest
+      ayfun/qqbox:latest
     ```
 
 3. **常见问题**
