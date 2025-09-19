@@ -37,6 +37,7 @@
       -e XDG_RUNTIME_DIR=$XDG_RUNTIME_DIR \            # 转发用户运行时目录
       -v /tmp/.X11-unix:/tmp/.X11-unix \               # 挂载 X11 套接字
       -v /mnt/wslg:/mnt/wslg \                         # 挂载 WSLg 目录（支持音频、图形等）
+      -v /run/user/0:/run/user/0 \                     # 修复wsl更新无法启动
       -v /usr/lib/wsl/lib:/usr/lib/wsl/lib \           # 挂载 WSL 库
       -v /mnt/c/Windows/Fonts:/usr/share/fonts/win11 \ # 挂载 Windows 字体
       -v /mnt/d/QQ:/root/.config/QQ \                  # 挂载 QQ 目录到D:\QQ
