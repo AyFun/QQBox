@@ -1,7 +1,7 @@
 FROM debian:12-slim
 
 RUN apt -y update && apt -y install wget libasound2 libglib2.0-bin dbus-x11 && cd ~ \
-&& wget -O qq.deb https://dldir1v6.qq.com/qqfile/qq/QQNT/Linux/QQ_3.2.19_250904_amd64_01.deb \
+&& wget -O qq.deb https://dldir1v6.qq.com/qqfile/qq/QQNT/Linux/QQ_3.2.23_260108_amd64_01.deb \
 && apt install -y ./qq.deb \
 && apt-get autoclean && apt-get clean \
 && rm -rf /root/.config/QQ/* && rm -rf /tmp/* \
